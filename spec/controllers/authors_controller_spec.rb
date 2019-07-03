@@ -5,10 +5,10 @@ RSpec.describe AuthorsController do
   let(:jeff_found) { Author.find_by(email: jeff.email) }
 
   describe "showing an author" do
-    it "shows an author" do
-      get :show, id: jeff.id
-      expect(jeff_found.id).to eq(jeff.id)
-    end
+    # it "shows an author" do
+    #   get :show, id: jeff.id
+    #   expect(jeff_found.id).to eq(jeff.id)
+    # end
   end
 
   describe "creating a valid author" do
